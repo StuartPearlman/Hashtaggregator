@@ -6,10 +6,11 @@ Tracks, stores, streams, and displays tweets for a specified hashtag.
 ##App Origins
 Every week, Jimmy Fallon releases a hashtag to the public and selects the funniest tweets to be featured on The Tonight Show. Currently, selecting those tweets is delegated to a staff member or even an intern.
 
-This project sought to democratize and automate the process of streaming, ranking, and displaying these tweets. 
+This project sought to democratize and automate the process of streaming, ranking, and displaying those tweets. 
 
 ##Amazing Features
-* Lightening fast Node back-end 
+* Lightening fast Node back-end
+* Change hashtags on the fly and watch the tweets stream in
 * Instantaneous search powered by Angular
 * Interactive map courtesy of Leaflet
 * Tweets turn orange on the map when they're red hot!
