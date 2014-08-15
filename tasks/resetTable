@@ -1,0 +1,5 @@
+#!/bin/bash
+
+psql source_development -c "DROP TABLE tweets"
+
+psql source_development -c "$(node ./tasks/createTable.js)"

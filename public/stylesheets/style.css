@@ -1,0 +1,131 @@
+/*
+Map
+*/
+
+.map {
+  position: absolute;
+  bottom: -50%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+/*
+Forms
+*/
+
+.modal form {
+  position: fixed;
+  top: 45%;
+  width: 100%;
+}
+
+.form-field {
+  padding: .5em;
+  border-radius: .5em;
+  border: none;
+  color: #152040;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: inherit;
+}
+
+.form-field:hover,
+.form-field:focus,
+.form-field:active {
+  outline: none;
+  border: none;
+}
+
+input {
+  z-index: 99;
+}
+
+.change-hashtag-form {
+	color: white;
+}
+
+.change-hashtag-form li {
+	display: inline-block;
+	margin: -.5em;
+}
+
+.hashtag-field {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.hashtag-submit {
+	background-color: #f60;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/*General brand image*/
+
+a{
+	text-decoration: none;
+	/*font-family: Helvetica;*/
+	color: #fa6;
+	line-height: 2;
+	size: 1.5em;
+}
+
+/*
+Top Tweets
+ */
+
+.tweet {
+	display: inline-block;
+	border: 2px solid #0cf;
+	border-radius: 2em;
+	padding: 1em;
+	width: 20%;
+	line-height: 1em;
+}
+
+.tweet-username {
+	font-size: 2em;
+	padding: 0;
+}
+
+.tweet-content {
+	font-size: 1.5em;
+	padding: 0;
+	line-height: 1em;
+	/*width: 30%;*/
+}
+
+.tweet-stars {
+	font-size: 1.5em;
+	padding: 0;
+}
+
+/*
+Search Functionality
+*/
+
+#search-tweets-div{
+	text-align: center;
+	background-color: #fff;
+	color: #444;
+}
+
+.search-field {
+	border: 1px solid #fa6;
+	width: 40%;
+}
+
+.search-field:hover,
+.search-field:focus,
+.search-field:active {
+  outline: #444;
+  border: #444;
+}
+
+#banner{
+	height: 8em;
+}
+
+#banner-div{
+	background-color: #444;
+}

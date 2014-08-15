@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+var debug = require('debug')('hashtaggregate');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 3888);
+
+var server = app.listen((process.env.PORT || 3888), function() {
+  console.log('Express server listening on port ' + server.address().port);
+  debug('Express server listening on port ' + server.address().port);
+});

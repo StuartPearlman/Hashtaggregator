@@ -1,0 +1,240 @@
+/*
+Typography ======================================================================================================================================================
+*/
+
+html,
+body {
+  font-family: 'Raleway', serif;
+  text-align: center;
+  color: #293F7F;
+}
+
+p {
+  color: #3E5FBF;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Josefin Slab', serif;
+}
+
+@media (min-width: 768) {
+  p {
+    font-size: 2.5em;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #3E5FBF;
+  padding: .5em 0;
+}
+
+h1, .h1,
+h2, .h2 {
+  text-transform: uppercase;
+}
+
+h1, .h1 {
+  font-size: 2.8em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+h2, .h2 {
+  font-size: 2.5em;
+}
+
+h3, .h3 {
+  font-size: 2em;
+}
+
+@media (min-width: 1068px) {
+  h1, .h1 {
+    font-size: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  h2, .h2 {
+    font-size: 3.25em;
+  }
+
+  h3, .h3 {
+    font-size: 2.5em;
+  }
+}
+
+h6, .h6 {
+  font-family: 'Josefin Slab', sans-serif;
+  font-weight: 100;
+  color: #eee;
+}
+
+/*
+Links ======================================================================================================================================================
+ */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+/*
+Spacing & Blocking =======================================================================================================================================
+ */
+
+.hidden {
+  display: none;
+}
+
+.content {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.contain {
+  overflow: hidden;
+}
+
+.inner {
+  padding: 5%;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.right-half {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+.left-half {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: auto;
+}
+
+@media (max-width: 767px) {
+  .right-half, .left-half {
+    min-width: 100%;
+    height: 50%;
+    position: relative;
+  }
+
+  .row {
+
+    min-height: 100%;
+    height: auto;
+
+  }
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.white-scrim {
+  background-color: rgba(255, 255, 255, .65)
+}
+
+.black-scrim {
+  background-color: rgba(10, 10, 10, .65)
+}
+
+.remove-top-margin {
+  margin-top: 0;
+}
+
+.remove-bottom-margin {
+  margin-bottom: 0;
+}
+
+.alt-col {
+  color: #FF4540;
+}
+
+.alt-col h1,
+.alt-col h2,
+.alt-col h3,
+.alt-col h4,
+.alt-col h5,
+.alt-col h6,
+.alt-col p,
+.alt-col li {
+  color: #FF4540;
+}
+
+/*
+Modals ======================================================================================================================================================
+ */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  overflow: scroll;
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  background-color: rgba(10, 10, 10, .85);
+}
+
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4,
+.modal h5,
+.modal h6,
+.modal p {
+  color: #eee;
+  text-align: left;
+}
+
+.modal h1 {
+  font-size: 2em;
+}
+
+.modal h2 {
+  font-size: 1.8em;
+}
+
+.modal p {
+  font-size: 1.5em
+}
+
+@media (min-width: 1068px) {
+  .modal h1 {
+    font-size: 2.8em;
+  }
+
+  .modal h2 {
+    font-size: 2em;
+  }
+
+  .modal p {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="hashtag">
+  <head>
+    <title><%= title %></title>
+    <link rel="icon" type="text/css" href="/images/g8or.png">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Raleway:400,700|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/stylesheets/reset.css'/>
+    <link rel='stylesheet' href='/stylesheets/shoelace.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  </head>
+
+  <body ng-controller="mapController">
+
+    <section>
+      <div class="modal hashtag-form-modal hidden">
+        <form id="change-hashtag-form" class="change-hashtag-form message-modal">
+          <ul>
+            <li>
+              <input class="form-field hashtag-field " type='text' name='hashtag' placeholder="#myDumbFight">
+            </li>
+            <li>
+              <input id="hashtag-submit" class="form-field hashtag-submit" type='submit' value='map it!'>
+            </li>
+          </ul>
+        </form> 
+      </div>
+    </section>
+
+    <div id = "banner-div">
+      <img id="banner" src="/images/Hashtaggregator_banner.jpg" >
+    </div>
+    
+
+    <section id='search-tweets-div'>
+      <h1>{{title}}</h1>
+      <input class="form-field search-field" id='search-box-itself' ng-model="search" placeholder="find some tweets">
+      <ul id="search-results"> 
+        <li class="tweet leaflet-popup-content" ng-repeat="tweet in tweets | filter:search | orderBy:'stars':!reverse | limitTo:10" ng-show="search">
+            <a class="top-tweet" href="{{tweet.longitude}},{{tweet.latitude}}">
+              <p class="tweet-username">
+                {{tweet.username}}
+              </p>
+              <p class="tweet-content">
+                {{tweet.content}}
+              </p>
+              <p class="tweet-stars">
+                {{tweet.stars}} favorites
+              </p>
+            </a>
+        </li>
+      </ul>
+    </section>
+
+
+    <div id="map" class="map"></div>
+
+
+<!-- load javascripts at end of document for faster page load -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+    <script type = "text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script type = "text/javascript" src="/javascripts/map.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">window.socket = io.connect();</script>
+    <script type = "text/javascript" src="/javascripts/main.js"></script>
+    <script type = "text/javascript" src="/javascripts/display.js"></script>
+  </body>
+</html>
