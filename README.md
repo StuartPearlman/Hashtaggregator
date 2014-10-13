@@ -10,10 +10,10 @@ This project sought to democratize and automate the process of streaming, rankin
 
 ##Amazing Features
 * Lightening fast Node back-end
-* Change hashtags on the fly and watch the tweets stream in
+* Change hashtags on the fly and watch the tweets stream in or click "Map it!" to see tweets from the default hashtag.
 * Instantaneous search powered by Angular
 * Interactive map courtesy of Leaflet
 * Tweets turn orange on the map when they're red hot!
 * Sweet gator logo provided by [Melissa Berger](http://melissaberger.com)
 
-Try out the deployed app at: <http://hashtaggregator-node.herokuapp.com>
+Try out the deployed app at: <http://hashtaggregator.herokuapp.com>
