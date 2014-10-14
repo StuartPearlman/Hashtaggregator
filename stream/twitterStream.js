@@ -1,7 +1,7 @@
 // Connect to Twitter Streaming API and return constant stream of JSON objects
 
 var Twit = require('twit');
-var keys = require('../keys.js');
+// var keys = require('../keys.js');
 
 var T = new Twit({
   consumer_key: process.env.consumer_key,

@@ -1,2 +1,2 @@
 // set default hashtag
-module.exports = 'iraqi';
+module.exports = 'ebola';

@@ -10,7 +10,7 @@ var tweetSQL = sql.define({
 
 module.exports = function(tweet, cb) {
   // console.log(tweet);
-  var query = tweetSQL.insert(tweet).toQuery()
+  var query = tweetSQL.insert(tweet).toQuery();
 
   dbQuery(query, function(err, result) {
 

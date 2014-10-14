@@ -8,7 +8,7 @@ var stream;
 // custom callbacks
 function objectifyCB(err, tweetObject) {
   if (err) return console.error(err);
-  if (tweetObject.username) {
+  if (tweetObject.latitude) {
     createTweet(tweetObject, createTweetCB);
   }
 }
