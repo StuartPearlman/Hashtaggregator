@@ -1,7 +1,7 @@
-Hashtaggregator_Node
+Hashtaggregator
 ====================
 
-Tracks, stores, streams, and displays tweets for a specified hashtag.
+Tracks, stores, streams, and displays tweets for a specified hashtag or word.
 
 ##App Origins
 Every week, Jimmy Fallon releases a hashtag to the public and selects the funniest tweets to be featured on The Tonight Show. Currently, selecting those tweets is delegated to a staff member or even an intern.
